@@ -33,6 +33,7 @@
 
 <script>
   function updateTime() {
+    const clockElement = document.getElementById('clock');
     const now = new Date();
     const formatted = now.toLocaleString(); // User's local time
     document.getElementById("time-banner").innerText = `Current Time: ${formatted}`;
