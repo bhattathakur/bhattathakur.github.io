@@ -1,4 +1,5 @@
 .banner {
+  position:relative; 
   font-family: 'Orbitron', monospace;
   color: #00FF00;
   background-color: #000;
@@ -6,7 +7,6 @@
   height:40px;
   line-height:40px;
   overflow: visible;
-  /* position:relative; */
 }
 
 .clock {
