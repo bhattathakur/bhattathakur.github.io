@@ -1,6 +1,7 @@
 .banner {
   position:relative; 
-  font-family: 'Orbitron', monospace;
+  /* #font-family: 'Orbitron', monospace; */
+  font-family: 'Courier New', monospace;
   color: #00FF00;
   /* background-color: #000; */
   padding: 10px 100px 10px 10px;
