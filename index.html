@@ -25,6 +25,20 @@
 </head>
 
 <body>
+  <!-- Time Display Banner -->
+<div class="text-center py-2 bg-light" id="time-banner" style="font-weight: bold; color: #007bff;"></div>
+
+<script>
+  function updateTime() {
+    const now = new Date();
+    const formatted = now.toLocaleString(); // User's local time
+    document.getElementById("time-banner").innerText = `Current Time: ${formatted}`;
+  }
+
+  updateTime(); // Initial time display
+  setInterval(updateTime, 1000); // Update every second
+</script>
+
   <!-- Scrolling Banner -->
 <div style="background-color: #f8f9fa; padding: 10px 0;">
   <marquee behavior="scroll" direction="left" scrollamount="4" style="color: #af4c9a; font-weight: bold;">
