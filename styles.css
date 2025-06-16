@@ -1,16 +1,9 @@
-
 .banner {
   font-family: 'Orbitron', monospace;
   color: #00FF00;
   background-color: #000;
   padding: 10px;
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-}
-.banner span {
-  display: inline-block;
-  animation: scroll-left 10s linear infinite;
+  position:relative;
 }
 
 .clock {
@@ -18,10 +11,5 @@
   top: 10px;
   right: 20px;
   font-size: 1rem;
-}
-
-
-@keyframes scroll-left {
-  0% { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
+  color:#00FF00;
 }

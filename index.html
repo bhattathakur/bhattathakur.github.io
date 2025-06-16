@@ -30,7 +30,7 @@
 <body>
   <!-- Time Display Banner -->
 <div class="text-center py-2 bg-light" id="time-banner" style="font-weight: bold; color: #007bff;"></div>
-<div class="banner position-relative">
+<div class="banner">
   <span id="clock" class="clock"></span>
 </div>
 
@@ -41,11 +41,11 @@
     const now = new Date();
     const formatted = now.toLocaleString(); // User's local time
     // document.getElementById("time-banner").innerText = `Current Time: ${formatted}`;
-     clockElement.textContent = ` | Current Time: ${timeStr}`;
+     clockElement.textContent = `Current Time: ${timeStr}`;
   }
 
-  updateTime(); // Initial time display
   setInterval(updateTime, 1000); // Update every second
+  updateTime(); // Initial time display
 </script>
 
   <!-- Scrolling Banner -->
