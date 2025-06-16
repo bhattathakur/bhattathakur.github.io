@@ -40,7 +40,8 @@
     const clockElement = document.getElementById('clock');
     const now = new Date();
     const formatted = now.toLocaleString(); // User's local time
-    document.getElementById("time-banner").innerText = `Current Time: ${formatted}`;
+    // document.getElementById("time-banner").innerText = `Current Time: ${formatted}`;
+     clockElement.textContent = ` | Current Time: ${timeStr}`;
   }
 
   updateTime(); // Initial time display
