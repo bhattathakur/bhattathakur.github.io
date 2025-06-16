@@ -39,9 +39,20 @@
   function updateTime() {
     const clockElement = document.getElementById('clock');
     const now = new Date();
-    const timeStr = now.toLocaleString(); // User's local time
+   // const timeStr = now.toLocaleString(); // User's local time
     // document.getElementById("time-banner").innerText = `Current Time: ${formatted}`;
-     clockElement.textContent = `Current Time: ${timeStr}`;
+    // Format time only (e.g., 10:45:23 AM)
+  const timeStr = now.toLocaleTimeString();
+
+  // Added: Get the full name of the weekday (e.g., Monday)
+  const dayName = now.toLocaleDateString('en-US', { weekday: 'long' });
+
+  // Changed: Format the date as MM/DD/YYYY
+  const dateStr = now.toLocaleDateString('en-US');
+
+  // Updated content to include time, day name, and date
+  clockElement.textContent = `Current Time: ${timeStr}, ${dayName}, ${dateStr}`;
+  // clockElement.textContent = `Current Time: ${timeStr}`;
   }
   setInterval(updateTime, 1000); // Update every second
   updateTime(); // Initial time display
