@@ -3,66 +3,199 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Thakur Bhatta | Data Scientist & Physicist</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <title>Thakur Bhatta - Stock Analysis Projects</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    a {
+      color: #a32aa8;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    .magenta {
+      color: #a32aa8;
+    }
+    h1, h2, h3 {
+      margin-bottom: 0.3em;
+    }
+    section.about-me {
+      background: white;
+      padding: 25px 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+      margin-bottom: 40px;
+    }
+    section.about-me p {
+      line-height: 1.5;
+      max-width: 720px;
+      white-space: pre-line;
+    }
+    section.projects ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+    section.projects li {
+      margin-bottom: 15px;
+    }
+    section.projects li strong {
+      font-weight: 600;
+    }
+    section.projects ol {
+      padding-left: 18px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+    .note {
+      font-size: 0.9em;
+      color: #555;
+      font-style: italic;
+      margin-top: 3px;
+    }
+  </style>
 </head>
-<body class="bg-light text-dark">
+<body>
+  <div class="container">
 
-  <div class="container py-5">
-    <header class="mb-4 text-center">
-      <h1>Thakur Bhatta</h1>
-      <p class="lead">M.S. (Physics), Ph.D. (Physics)</p>
+    <!-- About Me Section -->
+    <section class="about-me">
+      <h1 class="magenta">THAKUR BHATTA</h1>
+      <h4>M.S. (Physics), Ph.D. (Physics)</h4>
       <p>
-        📞 859-457-1924 |
-        📧 <a href="mailto:bhattathakur2015@gmail.com">bhattathakur2015@gmail.com</a> |
-        <a href="https://linkedin.com/in/YOUR_PROFILE">LinkedIn</a> |
-        <a href="https://github.com/YOUR_GITHUB">GitHub</a>
+        <strong>859-457-1924</strong> | 
+        <a href="mailto:bhattathakur2015@gmail.com">bhattathakur2015@gmail.com</a> | 
+        <a href="https://linkedin.com/in/your-linkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a> | 
+        <a href="https://github.com/your-github" target="_blank" rel="noopener noreferrer">github</a>
       </p>
-    </header>
-
-    <section>
-      <h2 class="text-primary">Career Profile</h2>
       <p>
-        Physics graduate with a robust background in Physics, Mathematics, and Statistics, complemented by a strong passion for computational problem-solving...
+        Physics graduate with a robust background in Physics, Mathematics, and Statistics, complemented by a strong
+        passion for computational problem-solving. Proficient in modern programming languages for data analysis,
+        automation, and task optimization. Formally trained in machine learning fundamentals, with expertise in
+        applying data analysis to solve real-world problems. A self-motivated learner, deeply committed to professional
+        growth, with a strong inclination toward impactful work. Actively seeking opportunities in the data science and
+        data analysis fields, eager to contribute analytical expertise, programming skills, and problem-solving abilities
+        to drive impactful business decisions and innovations. US Permanent Resident and open to both remote and
+        on-site opportunities.
       </p>
     </section>
 
-    <section>
-      <h2 class="text-primary mt-4">Skills Summary</h2>
+    <!-- Projects Section -->
+    <section class="projects">
+      <h2 class="magenta">Stock Analysis Experiences</h2>
       <ul>
-        <li><strong>Programming & Data Science:</strong> Python, C++, Java, SQL, Machine Learning</li>
-        <li><strong>Scientific Tools:</strong> HPC, Docker, ROOT, GEANT4, LATEX</li>
-        <li><strong>Soft Skills:</strong> Leadership, Time management, Scientific writing</li>
+        <li>
+          <strong>US Stock Market Screener</strong><br/>
+          Designed a robust and user-friendly Stock Screener 
+          <a href="https://snpupdates.streamlit.app/" target="_blank" rel="noopener noreferrer">DASHBOARD</a> using Python and Streamlit to analyze stocks from the S&amp;P 501, DOW 30, NASDAQ 100 and IPOs based on End-of-Day data, offering key insights into the latest trends in the US stock market. Key features include:
+          <ol>
+            <li><a href="https://snpupdates.streamlit.app/MARKET_OVERVIEW" target="_blank" rel="noopener noreferrer">MARKET_OVERVIEW</a> gives the broad-view of the market based on the indices or sectors.</li>
+            <li>Built a <a href="https://snpupdates.streamlit.app/SCREENER" target="_blank" rel="noopener noreferrer">SCREENER</a> to identify top gainers and losers over various timeframes, such as the latest trading day, week, month, and year-to-date (YTD).</li>
+            <li>Implemented advanced filters for stocks based on indicators like moving averages, RSI, ATR, trading volume, and 52-week highs/lows.</li>
+            <li>Developed a tool to highlight stocks significantly above or below SMA21, SMA50, and SMA100, facilitating the identification of potential pullback opportunities and mean reversion targets.</li>
+            <li>Added visualizations, including bar plots and pie charts alongside a downloadable data table for in-depth analysis.</li>
+            <li>Included features for generating a one-year candlestick <a href="https://snpupdates.streamlit.app/DAILY_CHART" target="_blank" rel="noopener noreferrer">DAILY-CHART</a> for any stock and a <a href="https://snpupdates.streamlit.app/MINUTE_CHART" target="_blank" rel="noopener noreferrer">ONE-MINUTE-CHART</a> for the last five trading days, along with a detailed information table summarizing the stock's trading history since inception.</li>
+          </ol>
+          <strong>Dashboard link:</strong> <a href="https://snpupdates.streamlit.app/" target="_blank" rel="noopener noreferrer">dashboard</a>
+        </li>
+
+        <li>
+          <strong>Market News &amp; Ticker Insights App</strong> — 
+          <a href="https://stockmarketnews.streamlit.app/" target="_blank" rel="noopener noreferrer">https://stockmarketnews.streamlit.app/</a><br/>
+          Real-time stock headlines with intelligent filtering, sentiment analysis, and text-to-speech — powered by AI and the Finnhub API.
+        </li>
+
+        <li>
+          <strong>Candlestick Pattern Screener</strong> — 
+          <a href="https://candlestickpatterns.streamlit.app/CANDLESTICK_PATTERN_SCREENER" target="_blank" rel="noopener noreferrer">web-app-link</a><br/>
+          Developed a candlestick pattern screener that identifies and analyzes stock patterns from the most recent trading day. The tool enables users to filter markets based on major indices (S&amp;P 500, DOW 30, NASDAQ 100) and IPOs from 2020 onwards. Users can select from 61 different candlestick patterns or filter by pattern type (Bullish, Bearish, Reversal, Continuation, etc.). The application provides detailed stock data, including key metrics like Close, Change, Volume, SMAs, RSI, and ATR, and allows for visual analysis with a yearly candlestick chart and zoomed-in view of the latest pattern. This project offers valuable insights for traders utilizing technical analysis and enables the identification of potential pullbacks for informed decision-making.<br/>
+          <strong>App link:</strong> <a href="https://candlestickpatterns.streamlit.app/CANDLESTICK_PATTERN_SCREENER" target="_blank" rel="noopener noreferrer">candlestick-web-app-link</a>
+        </li>
+
+        <li>
+          <strong>Backtesting App</strong> — 
+          <a href="https://breakoutbacktest.streamlit.app/" target="_blank" rel="noopener noreferrer">backtesting-app-link</a><br/>
+          Created breakout backtesting app which provides results for holding a ticker over a specified number of days, based on two conditions: when the volume on a given day exceeds a certain percentage above the 20-day average volume (volume threshold %) and when the percentage change on that day surpasses a defined value (change threshold %). It also shows the results visually and allows user to download the resultant data in CSV file.<br/>
+          <strong>App link:</strong> <a href="https://breakoutbacktest.streamlit.app" target="_blank" rel="noopener noreferrer">backtesting-app-link</a>
+        </li>
+
+        <li>
+          <strong>Portfolio Tracker App</strong> — 
+          <a href="https://stockportfoliotracker.streamlit.app/" target="_blank" rel="noopener noreferrer">stockportfoliotracker-app-link</a><br/>
+          Developed an interactive web application for real-time and historical stock portfolio performance analysis using data from Yahoo Finance via the <code>yfinance</code> API. The tool enables users to track portfolio changes minute-by-minute over the last five business days or across a user-defined date range.
+        </li>
+
+        <li>
+          <strong>Real Time Stock Tracker</strong><br/>
+          Developed a real-time stock tracking 
+          <a href="https://livetick.streamlit.app/livedata" target="_blank" rel="noopener noreferrer">dashboard</a> that processes minute-by-minute data and provides critical alerts, such as price crossing above VWAP, SMA5 exceeding SMA10, TR surpassing ATR5, and volume exceeding the 5-minute average. The dashboard also features voice notifications for scenarios like SMA5 crossing above or below SMA10 and stocks exhibiting higher or lower closes for three consecutive minutes. The notification system can be further enhanced with additional parameters and finer-grained data for more accurate entry and exit signals.<br/>
+          <strong>App link:</strong> <a href="https://livetick.streamlit.app/livedata" target="_blank" rel="noopener noreferrer">live-data</a><br/>
+          <span class="note">Note: It only works for regular trading hours — 9:30 AM EST to 4:00 PM EST.</span>
+        </li>
+
+        <li>
+          <strong>Stock Replay App</strong><br/>
+          Created a highly practical 
+          <a href="https://ticker-play.onrender.com/" target="_blank" rel="noopener noreferrer">stock-replay app</a> that replays a stock's minute-by-minute movement for a selected day (currently limited to the last five business days). The app provides visual insights into stock behavior by displaying metrics such as Close price, Change, Traded Volume, and Volume Percentage for each minute. This tool is particularly beneficial for analyzing intraday stock behavior and offers valuable insights for day traders to understand stock movements during different times of the day.<br/>
+          <strong>App link:</strong> <a href="https://ticker-play.onrender.com/" target="_blank" rel="noopener noreferrer">ticker-replay</a><br/>
+          <span class="note">Note: It might take a while to load this app.</span>
+        </li>
+
+        <li>
+          <strong>NASDAQ Gainers/Losers</strong><br/>
+          Developed an intuitive and insightful web 
+          <a href="https://gainer-loser-dash.onrender.com/" target="_blank" rel="noopener noreferrer">app</a> that displays the top ten gainers and losers on NASDAQ from the last trading day across categories such as MEGA, LARGE, MEDIUM, SMALL, MICRO, and NANO. The app also provides key metrics for each ticker, including Percent Change, Net Change, Volume, Market Cap, IPO Year, SMAs, One-Year High/Low, and All-Time High/Low.<br/>
+          <strong>App link:</strong> <a href="https://gainer-loser-dash.onrender.com" target="_blank" rel="noopener noreferrer">nasdaq-gainer/loser-category-wise</a>
+        </li>
+
+        <li>
+          <strong>Breakout Strategy Analysis Program</strong>
+          <ul>
+            <li>Evaluated scenarios where a stock’s volume exceeds <em>X%</em> of the 20-day average volume, and the percent change is <em>P%</em> higher (for long positions) or <em>S%</em> lower (for short positions) than the previous day’s close.</li>
+            <li>Simulated holding periods of <em>h</em> days with user-defined parameters, including waiting periods for long/short positions (<em>w</em>).</li>
+            <li>Generated detailed outputs:
+              <ul>
+                <li><strong>Buy-Sell Signal Files</strong> (examples):
+                  <ul>
+                    <li><a href="https://github.com/bhattathakur/shared_notebooks/blob/main/TSLA_long_signals.csv" target="_blank" rel="noopener noreferrer">Long-Signal File</a></li>
+                    <li><a href="https://github.com/bhattathakur/shared_notebooks/blob/main/TSLA_short_signals.csv" target="_blank" rel="noopener noreferrer">Short-Signal File</a></li>
+                  </ul>
+                </li>
+                <li><strong>Summary Reports</strong> (examples):
+                  <ul>
+                    <li><a href="https://github.com/bhattathakur/shared_notebooks/blob/main/TSLA_long_summary.csv" target="_blank" rel="noopener noreferrer">Long-Summary File</a></li>
+                    <li><a href="https://github.com/bhattathakur/shared_notebooks/blob/main/TSLA_short_summary.csv" target="_blank" rel="noopener noreferrer">Short-Summary File</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>Designed for flexibility: applicable to any strategy, timeframe, or asset.</li>
+            <li>Currently integrating machine learning techniques to incorporate diverse assets, enhance analysis, and optimize parameter combinations.</li>
+          </ul>
+        </li>
+
+        <li>
+          Analysis of 5-day, one-minute stock data and option statistics across various expiration dates using the yfinance API to understand granular ticker movements and identify potential price movement points based on option statistics.<br/>
+          <strong>GitHub link:</strong> <a href="https://github.com/bhattathakur/shared_notebooks/blob/main/minute_and_optionwithclass.ipynb%20-%20Colab.pdf" target="_blank" rel="noopener noreferrer">result-file-link</a>
+        </li>
+
+        <li>
+          Analysis of 5-day anchored VWAP for selected tickers to identify opportunities from potential pullbacks.<br/>
+          <strong>GitHub link:</strong> <a href="https://github.com/bhattathakur/shared_notebooks/blob/main/five_day_vwap.ipynb" target="_blank" rel="noopener noreferrer">five-day-vwap-link</a>
+        </li>
       </ul>
     </section>
 
-    <section>
-      <h2 class="text-primary mt-4">Projects</h2>
-      <div class="row">
-        <div class="col-md-6 mb-3">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Stock Screener Dashboard</h5>
-              <p class="card-text">Python + Streamlit dashboard to analyze S&P 500, NASDAQ, and more.</p>
-              <a href="https://your-dashboard-link" class="btn btn-primary" target="_blank">View App</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 mb-3">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Market News App</h5>
-              <p class="card-text">Real-time stock headlines with AI-powered sentiment analysis.</p>
-              <a href="https://stockmarketnews.streamlit.app/" class="btn btn-primary" target="_blank">Live App</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Add more cards for other projects -->
-      </div>
-    </section>
   </div>
-
 </body>
 </html>
