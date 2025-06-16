@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+.banner {
+  font-family: 'Orbitron', monospace;
+  color: #00FF00;
+  background-color: #000;
+  padding: 10px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.banner span {
+  display: inline-block;
+  animation: scroll-left 10s linear infinite;
+}
+@keyframes scroll-left {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
